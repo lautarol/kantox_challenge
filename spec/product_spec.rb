@@ -1,9 +1,9 @@
 # frozen_string_literal: true
-
-describe ProductSpec do
+require_relative '../lib/product'
+describe Product do
   context 'when a new product is created' do
     context 'with the correct attributes' do
-      before { let(:product) { Product.new('GR1', 'Green tea', 3.11) } }
+      let(:product) { Product.new('GR1', 'Green tea', 3.11) }
 
       it 'creates a Product instance' do
         expect(product).to be_kind_of(Product)
