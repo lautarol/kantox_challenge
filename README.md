@@ -52,18 +52,14 @@ price = co.total
 Implement a checkout system that fulfills these requirements.
 
 ### Test data:
-Basket: GR1,SR1,GR1,GR1,CF1
+Basket: GR1,SR1,GR1,GR1,CF1  
+Total price expected: £22.45  
 
-Total price expected: £22.45
+Basket: GR1,GR1  
+Total price expected: £3.11  
 
-Basket: GR1,GR1
+Basket: SR1,SR1,GR1,SR1  
+Total price expected: £16.61  
 
-Total price expected: £3.11
-
-Basket: SR1,SR1,GR1,SR1
-
-Total price expected: £16.61
-
-Basket: GR1,CF1,SR1,CF1,CF1
-
-Total price expected: £30.57
+Basket: GR1,CF1,SR1,CF1,CF1  
+Total price expected: £30.57  
