@@ -41,10 +41,12 @@ Our check-out can scan items in any order, and because the CEO and COO change th
 often, it needs to be flexible regarding our pricing rules.
 
 ### The interface to our checkout looks like this (shown in ruby):
+```ruby
 co = Checkout.new(pricing_rules)  
 co.scan(item)  
 co.scan(item)  
-price = co.total  
+price = co.total
+```
 Implement a checkout system that fulfills these requirements.  
 ### Test data:
 Basket: GR1,SR1,GR1,GR1,CF1  
